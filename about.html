@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .box
+        {
+            text-shadow: 0 0 20px #00f,0 0 1px #0081bc;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            padding: 14px 0;
+        }
+        
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .navbar a:hover {
+            color: #ccc;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s;
+        }
+        
+        h1 {
+            color: #333;
+            font-size: 32px;
+        }
+        
+        h2 {
+            color: #777;
+            font-size: 24px;
+        }
+        
+        p {
+            color: #555;
+            line-height: 1.5;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .container {
+                margin: 20px;
+            }
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                <a href="#">Portfolio.</a>
+            </div>
+            <input type="checkbox" id="click">
+
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="index.html"  class="active" style="--navAni:1">Home</a></li>
+                <li><a href="about.html" style="--navAni:2">About</a></li>
+                <li><a href="skill.html" style="--navAni:3">Skills</a></li>
+                <li><a href="cv.html" style="--navAni:4">cv</a></li>
+                <li><a href="contect.html" style="--navAni:5">Contact</a></li>
+            </ul>
+            <label class="mode">
+                <input type="checkbox" id="darkModeToggle">
+                <i class='bx bxs-moon'></i>
+            </label>
+        </div>
+        <div class="container">
+            <div class="box">    <h1>Arpit Kukadiya</h1></div>
+            <h2>Web Developer</h2>
+            <p>Welcome to my portfolio website! Here, you can find information about my background, skills, and ways to get in touch with me.</p>
+            <p>hear give contect details. <br>check in contect</p>
+        </div>
+    </header>
+   
+
+</body>
+</html>
